@@ -14,7 +14,7 @@ img_url = [ 'https://img.freepik.com/premium-photo/3d-text-effect_630789-7533.jp
 
 def download(img_url):
     for url in img_url:
-        r = requests.get(url)._content
+        r = requests.get(url).content
         for item in img_url:
             lst.append(item.split('/')[4])
         for element in lst:
